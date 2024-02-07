@@ -71,12 +71,6 @@ section {
   display: flex;
 }
 
-// .nav-icon::before {
-//   background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg');
-//   background-repeat: no-repeat;
-//   content: '🔗';
-// }
-
 .nav-title {
   display: flex;
   font-size: 16px;
@@ -105,21 +99,6 @@ section {
   color: #24292e;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-}
-
-main {
-  display: block;
-  box-sizing: border-box;
-}
-
-article {
-  width: auto;
-  max-width: 1600px;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-around;
-  padding: 0px 11px;
-  box-sizing: border-box;
 }
 
 .wrapper {
@@ -180,16 +159,6 @@ img {
   border-radius: 4px;
 }
 
-// .post {
-//   font-size: 14px;
-// }
-
-// @media (min-width: 1024px) {
-//   .post {
-//     font-size: 16px;
-//   }
-// }
-
 @media all and (min-width: 1280px) {
   .wrapper div {
     display: flex;
@@ -220,5 +189,11 @@ img {
     width: 50%;
     padding: 0px 16px;
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden {
+    display: none;
   }
 }

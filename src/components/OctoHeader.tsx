@@ -29,7 +29,7 @@ export function OctoHeader() {
               <a href="#">RSS</a>
             </li>
           </ul>
-          <ul className="nav-right-side">
+          <ul className="nav-right-side hidden">
             <li className="nav-item">
               <a href="#">Follow us on Twitter</a>
             </li>

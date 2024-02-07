@@ -1,467 +1,950 @@
 import React from 'react'
+import { Octocat } from './components/Octocat'
+import { OctoHeader } from './components/OctoHeader'
+import { OctoFooter } from './components/OctoFooter'
 
 export function App() {
   return (
-    <main>
-      <article>
-        <div className="wrapper">
-          <div className="entry">
-            <a href="https://octodex.github.com/parentocats/">
-              <img
-                src="https://octodex.github.com/images/parentocats.png"
-                alt="Parentocats"
-              />
-            </a>
-            <ul>
-              <li>
-                #155:{' '}
-                <a href="https://octodex.github.com/parentocats/">
-                  <strong>Parentocats</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/johncreek">
-                  <img
-                    src="https://github.com/johncreek.png"
-                    width="24px"
-                    height="24px"
-                    alt="johncreek"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+    <div>
+      <OctoHeader />
 
-          <div className="entry">
-            <a href="https://octodex.github.com/godotocat/">
-              <img
-                src="https://octodex.github.com/images/godotocat.png"
-                alt="Godotocat"
-              />
-            </a>
-            <ul>
-              <li>
-                #154:{' '}
-                <a href="https://octodex.github.com/godotocat/">
-                  <strong>Godotocat</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/johncreek">
-                  <img
-                    src="https://github.com/johncreek.png"
-                    width="24px"
-                    height="24px"
-                    alt="johncreek"
-                  />
-                </a>
-                <a href="https://github.com/leereilly">
-                  <img
-                    src="https://github.com/leereilly.png"
-                    width="24px"
-                    height="24px"
-                    alt="leereilly"
-                  />
-                </a>
-              </li>
-            </ul>
+      <main>
+        <article>
+          <div className="wrapper">
+            <Octocat
+              name="parentocats"
+              image="parentocats.png"
+              number="155"
+              author="johncreek"
+            />
+            <Octocat
+              name="godotocat"
+              image="godotocat.png"
+              number="154"
+              author="leereilly"
+            />
+            <Octocat
+              name="NUXtocat"
+              image="NUX_Octodex.gif"
+              number="153"
+              author="cameronfoxly"
+            />
+            <Octocat
+              name="yogitocat"
+              image="yogitocat.png"
+              number="152"
+              author="johncreek"
+            />
+            <Octocat
+              name="Mona the Rivetertocat"
+              image="mona-the-rivetertocat.png"
+              number="151"
+              author="johncreek"
+            />
+            <Octocat
+              name="manufacturetocat"
+              image="manufacturetocat.png"
+              number="150"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="octoAsians"
+              image="OctoAsians_dex_Full.png"
+              number="149"
+              author="cameronfoxly"
+            />
+            <Octocat
+              name="octoqueer"
+              image="Octoqueer.png"
+              number="148"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="terracottocat"
+              image="Terracottocat_Single.png"
+              number="147"
+              author="chubbmo"
+            />
+            <Octocat
+              name="octogatos"
+              image="Octogatos.png"
+              number="146"
+              author="cameronfoxly"
+            />
+            <Octocat
+              name="adacats"
+              image="Adacats.png"
+              number="145"
+              author="cameronfoxly"
+            />
+            <Octocat
+              name="Fintechtocat"
+              image="Fintechtocat.png"
+              number="144"
+              author="ceciliorz"
+            />
+            <Octocat
+              name="Brennatocat"
+              image="Brennatocat.png"
+              number="143"
+              author="johncreek"
+            />
+            <Octocat
+              name="Filmtocats"
+              image="filmtocats.png"
+              number="142"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="Sentrytocats"
+              image="Sentrytocat_octodex.jpg"
+              number="141"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Umbrellatocat"
+              image="puddle_jumper_octodex.jpg"
+              number="140"
+              author="rubyjazzy"
+            />
+            <Octocat
+              name="Boxertocat"
+              image="boxertocat_octodex.jpg"
+              number="139"
+              author="rubyjazzy"
+            />
+            <Octocat
+              name="Surftocat"
+              image="surftocat.png"
+              number="138"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Hulatocat"
+              image="hula_loop_octodex03.gif"
+              number="137"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="Scubatocat"
+              image="scubatocat.png"
+              number="136"
+              author="cameronfoxly"
+            />
+            <Octocat
+              name="Vinyltocat"
+              image="vinyltocat.png"
+              number="135"
+              author="johncreek"
+            />
+            <Octocat
+              name="Tentocats"
+              image="tentocats.jpg"
+              number="134"
+              author="cameronfoxly"
+            />
+            <Octocat
+              name="Snowtocat"
+              image="snowtocat_final.jpg"
+              number="133"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="justicetocat"
+              image="justicetocat.jpg"
+              number="132"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="blacktocats"
+              image="blacktocats.png"
+              number="131"
+              author="cameronfoxly"
+            />
+            <Octocat
+              name="saint Nictocat"
+              image="saint_nictocat.jpg"
+              number="130"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="Mona Lovelace"
+              image="mona-lovelace.jpg"
+              number="129"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="dinotocat"
+              image="dinotocat.png"
+              number="128"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="Benjamin Bannekat"
+              image="bannekat.png"
+              number="127"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="catstello"
+              image="catstello.png"
+              number="126"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="McEfeeline"
+              image="mcefeeline.jpg"
+              number="125"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Skatetocat"
+              image="skatetocat.png"
+              number="124"
+              author="suziejurado"
+            />
+            <Octocat
+              name="Bewitchedtocat"
+              image="bewitchedtocat.jpg"
+              number="123"
+              author="heyhayhay"
+            />
+            <Octocat
+              name="Inflatocat"
+              image="inflatocat.png"
+              number="122"
+              author="rubyjazzy"
+            />
+            <Octocat
+              name="Welcometocat"
+              image="welcometocat.png"
+              number="121"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Filmtocat"
+              image="filmtocat.png"
+              number="120"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Private Investocat"
+              image="privateinvestocat.jpg"
+              number="119"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Gracehoppertocat"
+              image="gracehoppertocat.jpg"
+              number="118"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Gobble-o-tron"
+              image="gobbleotron.gif"
+              number="117"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Jetpacktocat"
+              image="jetpacktocat.png"
+              number="116"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Minertocat"
+              image="minertocat.png"
+              number="115"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Saketocat"
+              image="saketocat.png"
+              number="114"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Luchadortocat"
+              image="luchadortocat.png"
+              number="113"
+              author="johncreek"
+            />
+            <Octocat
+              name="Saritocat"
+              image="saritocat.png"
+              number="112"
+              author="johncreek"
+            />
+            <Octocat
+              name="Topguntocat"
+              image="topguntocat.png"
+              number="111"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Carlostocat"
+              image="carlostocat.gif"
+              number="110"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Grinchtocat"
+              image="grinchtocat.gif"
+              number="109"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Maxtocat"
+              image="maxtocat.gif"
+              number="108"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Yaktocat"
+              image="yaktocat.png"
+              number="107"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Steroidtocat"
+              image="steroidtocat.png"
+              number="106"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Mummytocat"
+              image="mummytocat.gif"
+              number="105"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Labtocat"
+              image="labtocat.png"
+              number="104"
+              author="johncreek"
+            />
+            <Octocat
+              name="Dunetocat"
+              image="dunetocat.png"
+              number="103"
+              author="johncreek"
+            />
+            <Octocat
+              name="OctoLiberty"
+              image="octoliberty.png"
+              number="102"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Femalecodertocat"
+              image="femalecodertocat.png"
+              number="101"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Daftpunktocat-Thomas"
+              image="daftpunktocat-thomas.gif"
+              number="100"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Daftpunktocat-Guy"
+              image="daftpunktocat-guy.gif"
+              number="99"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Founding Father v2"
+              image="foundingfather_v2.png"
+              number="98"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Poptocat v2"
+              image="poptocat_v2.png"
+              number="97"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Mardigrastocat"
+              image="Mardigrastocat.png"
+              number="96"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Kimonotocat"
+              image="kimonotocat.png"
+              number="95"
+              author="jeejkang"
+            />
+            <Octocat
+              name="professortocat_v2"
+              image="Professortocat_v2.png"
+              number="94"
+              author="jeejkang"
+            />
+            <Octocat
+              name="goretocat"
+              image="goretocat.png"
+              number="93"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Robotocat"
+              image="Robotocat.png"
+              number="92"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Motherhubbertocat"
+              image="motherhubbertocat.png"
+              number="91"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Skitchtocat"
+              image="skitchtocat.png"
+              number="90"
+              author="jonrohan"
+            />
+            <Octocat
+              name="Gangnamtocat"
+              image="gangnamtocat.png"
+              number="89"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Dr.Octocat"
+              image="droctocat.png"
+              number="88"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Spidertocat"
+              image="spidertocat.png"
+              number="87"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Megacat v2"
+              image="megacat.jpg"
+              number="86"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Dodgetocat v2"
+              image="dodgetocat.jpg"
+              number="85"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Stormtroopocat"
+              image="stormtroopocat.png"
+              number="84"
+              author="jeejkang"
+            />
+            <Octocat
+              name="Pusheencat"
+              image="pusheencat.png"
+              number="83"
+              author="billyroh"
+            />
+            <Octocat
+              name="Deckfailcat"
+              image="deckfailcat.png"
+              number="82"
+              author="mattgraham"
+            />
+            <Octocat
+              name="Murakamicat"
+              image="murakamicat.png"
+              number="81"
+              author="billyroh"
+            />
+            <Octocat
+              name="Homercat"
+              image="homercat.png"
+              number="80"
+              author="nickh"
+            />
+            <Octocat
+              name="Minion"
+              image="minion.png"
+              number="79"
+              author="nickh"
+            />
+            <Octocat
+              name="Droidtocat"
+              image="droidtocat.png"
+              number="78"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Octofez"
+              image="octofez.png"
+              number="77"
+              author="nickh"
+            />
+            <Octocat
+              name="Heisencat"
+              image="heisencat.png"
+              number="76"
+              author="jonrohan"
+            />
+            <Octocat
+              name="Red Polo"
+              image="red-polo.png"
+              number="75"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="20% Cooler Octocat"
+              image="twenty-percent-cooler-octocat.png"
+              number="74"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Momtocat"
+              image="momtocat.png"
+              number="73"
+              author="tonyjaramillo"
+            />
+            <Octocat
+              name="Snow Octocat"
+              image="snowoctocat.png"
+              number="72"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Electrocat"
+              image="electrocat.png"
+              number="71"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Codercat"
+              image="codercat.jpg"
+              number="70"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Strongbadtocat"
+              image="strongbadtocat.png"
+              number="69"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Adventure Cat"
+              image="adventure-cat.png"
+              number="68"
+              author="jonrohan"
+            />
+            <Octocat
+              name="Doctocat Brown"
+              image="doctocat-brown.jpg"
+              number="67"
+              author="jonrohan"
+            />
+            <Octocat
+              name="Dojocat"
+              image="dojocat.jpg"
+              number="66"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Defunktocat"
+              image="defunktocat.png"
+              number="65"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="Nemesis"
+              image="herme-t-crabb.png"
+              number="64"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Saint Nicktocat"
+              image="saint-nicktocat.jpg"
+              number="63"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Ordered Listocat"
+              image="orderedlistocat.jpg"
+              number="62"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Thanktocat"
+              image="thanktocat.jpg"
+              number="61"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Megacat"
+              image="megacat.jpg"
+              number="60"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="Linktocat"
+              image="linktocat.jpg"
+              number="59"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name=" Plumber"
+              image="plumber.jpg"
+              number="58"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Octotron"
+              image="octotron.jpg"
+              number="57"
+              author="broccolini"
+            />
+            <Octocat
+              name="Baracktocat"
+              image="baracktocat.jpg"
+              number="56"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Octocat De Los Muertos"
+              image="octocat-de-los-muertos.jpg"
+              number="55"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Grim Repo"
+              image="grim-repo.jpg"
+              number="54"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Father Timeout"
+              image="father_timeout.jpg"
+              number="53"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="Where's Waldocat"
+              image="waldocat.png"
+              number="52"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="Hipster Partycat"
+              image="hipster-partycat.jpg"
+              number="51"
+              author="jina"
+            />
+            <Octocat
+              name="Riddlocat"
+              image="riddlocat.png"
+              number="50"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Visionary"
+              image="visionary.jpg"
+              number="49"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="oktobercat"
+              image="oktobercat.png"
+              number="48"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="shoptocat"
+              image="shoptocat.png"
+              number="47"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="nyantocat"
+              image="nyantocat.gif"
+              number="46"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Octdrey Catburn"
+              image="octdrey-catburn.jpg"
+              number="45"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="spectrocat"
+              image="spectrocat.png"
+              number="44"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Bear Cavalry"
+              image="bear-cavalry.png"
+              number="43"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="andycat"
+              image="andycat.jpg"
+              number="42"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="not Octocat"
+              image="notocat.jpg"
+              number="41"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Dodge, Duck, Dip, Dive, Dodgetocat"
+              image="dodgetocat.jpg"
+              number="40"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="cloud"
+              image="cloud.jpg"
+              number="39"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Scarletteocat"
+              image="scarletteocat.jpg"
+              number="38"
+              author="jordanmccullough"
+            />
+            <Octocat
+              name="poptocat"
+              image="poptocat.jpg"
+              number="37"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="jenktocat"
+              image="jenktocat.jpg"
+              number="36"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="X-tocat"
+              image="xtocat.jpg"
+              number="35"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="chellocat"
+              image="chellocat.jpg"
+              number="34"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Cherryontop-o-cat"
+              image="cherryontop-o-cat.jpg"
+              number="33"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="supportcat"
+              image="supportcat.jpg"
+              number="32"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="collabocats"
+              image="collabocats.jpg"
+              number="31"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="constructocat"
+              image="constructocat2.jpg"
+              number="30"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="Total Eclipse of the Octocat"
+              image="total-eclipse-of-the-octocat.jpg"
+              number="29"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name=" Blinktocat, Pinktocat, Inktocat, and Clyde"
+              image="pacman-ghosts.jpg"
+              number="28"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Okal-Eltocat"
+              image="okal-eltocat.jpg"
+              number="27"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Octoclark Kentocat"
+              image="octoclark-kentocat.jpg"
+              number="26"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Agendacat"
+              image="agendacat.jpg"
+              number="25"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="IronCat"
+              image="ironcat.jpg"
+              number="24"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="inspectocat"
+              image="inspectocat.jpg"
+              number="23"
+              author="jasoncostello"
+            />
+            <Octocat
+              name="Jean-Luc Picat"
+              image="jean-luc-picat.jpg"
+              number="22"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="spocktocat"
+              image="spocktocat.jpg"
+              number="21"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Wilson"
+              image="wilson.jpg"
+              number="20"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="swagtocat"
+              image="swagtocat.jpg"
+              number="19"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="hubot"
+              image="hubot.jpg"
+              number="18"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Monroe"
+              image="monroe.jpg"
+              number="17"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="trekkie"
+              image="trekkie.jpg"
+              number="16"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="octonaut"
+              image="octonaut.jpg"
+              number="15"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="bouncer"
+              image="bouncer.jpg"
+              number="14"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Founding Father"
+              image="founding-father.jpg"
+              number="13"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="pythocat"
+              image="pythocat.png"
+              number="12"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="drupalcat"
+              image="drupalcat.jpg"
+              number="11"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="socialite"
+              image="socialite.jpg"
+              number="10"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="setuptocat"
+              image="setuptocat.jpg"
+              number="9"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="repo"
+              image="repo.jpg"
+              number="8"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="forktocat"
+              image="forktocat.jpg"
+              number="7"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="benevocats"
+              image="benevocats.jpg"
+              number="6"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="scottocat"
+              image="scottocat.jpg"
+              number="5"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="puppeteer"
+              image="puppeteer.jpg"
+              number="4"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="Octobi Wan Catnobi"
+              image="octobiwan.jpg"
+              number="3"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="class Act"
+              image="class-act.png"
+              number="2"
+              author="cameronmcefee"
+            />
+            <Octocat
+              name="original"
+              image="original.jpg"
+              number="1"
+              author="idokungfoo"
+            />
           </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/nuxtocat/">
-              <img
-                src="https://octodex.github.com/images/NUX_Octodex.gif"
-                alt="NUXtocat"
-              />
-            </a>
-            <ul>
-              <li>
-                #153:{' '}
-                <a href="https://octodex.github.com/nuxtocat/">
-                  <strong>NUXtocat</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/cameronfoxly">
-                  <img
-                    src="https://github.com/cameronfoxly.png"
-                    width="24px"
-                    height="24px"
-                    alt="cameronfoxly"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/yogitocat/">
-              <img
-                src="https://octodex.github.com/images/yogitocat.png"
-                alt="Yogitocat"
-              />
-            </a>
-            <ul>
-              <li>
-                #152:{' '}
-                <a href="https://octodex.github.com/yogitocat/">
-                  <strong>Yogitocat</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/johncreek">
-                  <img
-                    src="https://github.com/johncreek.png"
-                    width="24px"
-                    height="24px"
-                    alt="johncreek"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/mona-the-rivetertocat/">
-              <img
-                src="https://octodex.github.com/images/mona-the-rivetertocat.png"
-                alt="Mona the Rivertertocat"
-              />
-            </a>
-            <ul>
-              <li>
-                #151:{' '}
-                <a href="https://octodex.github.com/mona-the-rivetertocat/">
-                  <strong>Mona the Rivetertocat</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/johncreek">
-                  <img
-                    src="https://github.com/johncreek.png"
-                    width="24px"
-                    height="24px"
-                    alt="johncreek"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/manufacturetocat/">
-              <img
-                src="https://octodex.github.com/images/manufacturetocat.png"
-                alt="Manufacturetocat"
-              />
-            </a>
-            <ul>
-              <li>
-                #150:{' '}
-                <a href="https://octodex.github.com/manufacturetocat/">
-                  <strong>Manufacturetocat</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/heyhayhay">
-                  <img
-                    src="https://github.com/heyhayhay.png"
-                    width="24px"
-                    height="24px"
-                    alt="heyhayhay"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/octoasians/">
-              <img
-                src="https://octodex.github.com/images/OctoAsians_dex_Full.png"
-                alt="OctoAsians"
-              />
-            </a>
-            <ul>
-              <li>
-                #149:{' '}
-                <a href="https://octodex.github.com/octoasians/">
-                  <strong>OctoAsians</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/cameronfoxly">
-                  <img
-                    src="https://github.com/cameronfoxly.png"
-                    width="24px"
-                    height="24px"
-                    alt="cameronfoxly"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/octoqueer/">
-              <img
-                src="https://octodex.github.com/images/Octoqueer.png"
-                alt="Octoqueer"
-              />
-            </a>
-            <ul>
-              <li>
-                #148:{' '}
-                <a href="https://octodex.github.com/octoqueer/">
-                  <strong>Octoqueer</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/cameronfoxly">
-                  <img
-                    src="https://github.com/cameronfoxly.png"
-                    width="24px"
-                    height="24px"
-                    alt="cameronfoxly"
-                  />
-                </a>
-                <a href="https://github.com/johncreek">
-                  <img
-                    src="https://github.com/johncreek.png"
-                    width="24px"
-                    height="24px"
-                    alt="johncreek"
-                  />
-                </a>
-                <a href="https://github.com/tonyjaramillo">
-                  <img
-                    src="https://github.com/tonyjaramillo.png"
-                    width="24px"
-                    height="24px"
-                    alt="tonyjaramillo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/terracottocat/">
-              <img
-                src="https://octodex.github.com/images/Terracottocat_Single.png"
-                alt="Terracottocat"
-              />
-            </a>
-            <ul>
-              <li>
-                #147:{' '}
-                <a href="https://octodex.github.com/terracottocat/">
-                  <strong>Terracottocat</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/chubbmo">
-                  <img
-                    src="https://github.com/chubbmo.png"
-                    width="24px"
-                    height="24px"
-                    alt="chubbmo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/octogatos/">
-              <img
-                src="https://octodex.github.com/images/Octogatos.png"
-                alt="Octogatos"
-              />
-            </a>
-            <ul>
-              <li>
-                #146:{' '}
-                <a href="https://octodex.github.com/octogatos/">
-                  <strong>Octogatos</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/cameronfoxly">
-                  <img
-                    src="https://github.com/cameronfoxly.png"
-                    width="24px"
-                    height="24px"
-                    alt="cameronfoxly"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/adacats/">
-              <img
-                src="https://octodex.github.com/images/Adacats.png"
-                alt="Adacats"
-              />
-            </a>
-            <ul>
-              <li>
-                #145:{' '}
-                <a href="https://octodex.github.com/adacats/">
-                  <strong>Adacats</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/cameronfoxly">
-                  <img
-                    src="https://github.com/cameronfoxly.png"
-                    width="24px"
-                    height="24px"
-                    alt="cameronfoxly"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/fintechtocat/">
-              <img
-                src="https://octodex.github.com/images/Fintechtocat.png"
-                alt="Fintechtocat"
-              />
-            </a>
-            <ul>
-              <li>
-                #144:{' '}
-                <a href="https://octodex.github.com/fintechtocat/">
-                  <strong>Fintechtocat</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/ceciliorz">
-                  <img
-                    src="https://github.com/ceciliorz.png"
-                    width="24px"
-                    height="24px"
-                    alt="ceciliorz"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/puppeteer/">
-              <img
-                src="https://octodex.github.com/images/puppeteer.png"
-                alt="Puppeteer"
-              />
-            </a>
-            <ul>
-              <li>
-                #4:{' '}
-                <a href="https://octodex.github.com/puppeteer/">
-                  <strong>Puppeteer</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/cameronmcefee">
-                  <img
-                    src="https://github.com/cameronmcefee.png"
-                    width="24px"
-                    height="24px"
-                    alt="cameronmcefee"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/octobiwan/">
-              <img
-                src="https://octodex.github.com/images/octobiwan.jpg"
-                alt="Octobi Wan Catnobi"
-              />
-            </a>
-            <ul>
-              <li>
-                #3:{' '}
-                <a href="https://octodex.github.com/octobiwan/">
-                  <strong>Octobi Wan Catnobi</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/cameronmcefee">
-                  <img
-                    src="https://github.com/cameronmcefee.png"
-                    width="24px"
-                    height="24px"
-                    alt="cameronmcefee"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/className-act/">
-              <img
-                src="https://octodex.github.com/images/className-act.png"
-                alt="Class Act"
-              />
-            </a>
-            <ul>
-              <li>
-                #2:{' '}
-                <a href="https://octodex.github.com/className-act/">
-                  <strong>Class Act</strong>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/cameronmcefee">
-                  <img
-                    src="https://github.com/cameronmcefee.png"
-                    width="24px"
-                    height="24px"
-                    alt="cameronmcefee"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="entry">
-            <a href="https://octodex.github.com/original/">
-              <img
-                src="https://octodex.github.com/images/original.png"
-                alt="Original"
-              />
-            </a>
-            <ul>
-              <li>
-                #1:{' '}
-                <a href="https://octodex.github.com/original/">
-                  <strong>Original</strong>
-                </a>
-              </li>
-              <li>
-                <a href="http://www.idokungfoo.com/">
-                  <img
-                    src="https://octodex.github.com/images/idokungfoo-avatar.jpg"
-                    width="24px"
-                    height="24px"
-                    alt="idokungfoo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </main>
+        </article>
+      </main>
+      <OctoFooter />
+    </div>
   )
 }

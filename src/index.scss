@@ -1,15 +1,5 @@
 :root {
   font: 16px / 1 sans-serif;
-
-  // SDG brand colors
-  --asphalt: #2f3737;
-  --bright-sky: #80ced2;
-  --lime: #b1d133;
-  --night-sky: #85577e;
-  --sand: #f7f0da;
-  --sea: #5a9090;
-  --sun: #d5562b;
-  --tangerine: #f99d1b;
 }
 
 html {
@@ -18,5 +8,217 @@ html {
 
 body {
   margin: 0;
+  box-sizing: border-box;
   min-height: 100%;
+  background-color: #fafbfc;
+}
+
+.header-style {
+  background-color: rgba(255, 255, 255, 0.75);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #e1e4e8;
+  margin: 0px 0px 40px 0px;
+  display: block;
+  box-sizing: border-box;
+}
+
+section {
+  width: auto;
+  max-width: 1600px;
+  // padding: 0px 4px;
+  padding: 0px 18px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.nav-left-side {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0px;
+}
+
+.nav-left-side li a:link,
+.nav-left-side li a:visited {
+  text-decoration: none;
+  color: #24292e;
+  font-size: 14px;
+}
+
+.nav-left-side li a:hover {
+  color: #24292e;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.nav-title-group {
+  display: flex;
+  // padding: 0px 0px 0px 20px;
+}
+
+.nav-icon {
+  padding: 0px 0px;
+  list-style: none;
+  display: flex;
+}
+
+// .nav-icon::before {
+//   background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg');
+//   background-repeat: no-repeat;
+//   content: '🔗';
+// }
+
+.nav-title {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  color: #24292e;
+  padding: 0px 15px 0px 5px;
+}
+
+.nav-item a {
+  padding: 0px 10px;
+}
+
+.nav-right-side {
+  list-style: none;
+  display: flex;
+}
+
+.nav-right-side li a:link,
+.nav-right-side li a:visited {
+  text-decoration: none;
+  color: #24292e;
+  font-size: 14px;
+}
+
+.nav-right-side li a:hover {
+  color: #24292e;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+main {
+  display: block;
+  box-sizing: border-box;
+}
+
+article {
+  width: auto;
+  max-width: 1600px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  padding: 0px 11px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.wrapper div {
+  box-sizing: border-box;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.wrapper div > a {
+  display: block;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 9px;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.entry {
+  box-sizing: border-box;
+  width: auto;
+}
+
+.entry > ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.wrapper li a:link,
+.wrapper li a:visited {
+  text-decoration: none;
+  color: #24292e;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.footer-style {
+  display: flex;
+  justify-content: row;
+  align-items: flex-end;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+// .post {
+//   font-size: 14px;
+// }
+
+// @media (min-width: 1024px) {
+//   .post {
+//     font-size: 16px;
+//   }
+// }
+
+@media all and (min-width: 1280px) {
+  .wrapper div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    padding: 1rem;
+  }
+}
+
+@media all and (max-width: 1279px) and (min-width: 1012px) {
+  .wrapper div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .wrapper div {
+    padding: 0px 16px;
+  }
+}
+
+@media all and (max-width: 1011px) and (min-width: 545px) {
+  .wrapper div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 0px 16px;
+    margin-bottom: 40px;
+  }
 }
